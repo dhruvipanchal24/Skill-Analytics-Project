@@ -1,0 +1,19 @@
+# python
+
+__pychache__/
+*.pyc
+
+# environment
+
+.env
+
+# os files
+.DS_store
+
+# IBE
+
+.vscode/
+.idea/
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body{
+            font-family: 'Inter',sans-serif;
+            background: #f5f5f5;
+            margin:0;
+
+        }
+        .container{
+            width :650px;
+            margin:50px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+
+        }
+        h2{
+            text-align: center;
+            color : #222;
+
+        }
+        .section{
+            margin : 20px 0;
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 8px;
+        }
+        .label{
+            font-weight: 600;
+            color : #444;
+
+        }
+        ul{
+            margin-top: 10px;
+        }
+        li{
+            margin-bottom: 5px;
+
+        }
+        .btn{
+            display: block;
+            text-align: center;
+            background: #2d6a4f;
+            color : white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn-hover{
+            background: #1b4332;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Carreer Analysis</h2>
+
+<div class="section">
+ <span class="label">Name:</span>   {{ name }}
+
+</div>
+
+<div class="section">
+    <span class="label">Predicted role : </span>{{ role }}
+</div>
+
+
+<div class="section">
+    <span class="label">Your skils : </span> {{ skills }}</div>
+
+    <div class="section">
+        <span class="label">Recommended Skills to Learn : </span>
+<ul>
+    {% for skill in missing %}
+    <li>{{ skill }}</li>
+    {% endfor %}
+</ul>
+</div>
+
+<!-- <a href="/download/">Download Resume PDF</a> -->
+</div>
+</body>
+</html>
