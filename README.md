@@ -22,4 +22,4 @@ This is a Machine Learning based web application built using Django that analyze
 3. Run server
 
 ## 📸 Output
-(Add screenshots here)
+
